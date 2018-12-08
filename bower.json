@@ -1,9 +1,9 @@
 {
-  "name": "mikorn-project",
+  "name": "greenhouse-project",
   "description": "",
   "main": "gulpfile.js",
   "authors": [
-    "mikorn <info@webmikorn.ru>"
+    "Nataliya Gubina <questsight@gmail.com>"
   ],
   "license": "ISC",
   "ignore": [

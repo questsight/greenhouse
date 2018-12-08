@@ -1,12 +1,12 @@
 {
-  "name": "mikorn-project",
+  "name": "greenhouse-project",
   "version": "2.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Nataliya Gubina",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",

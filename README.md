@@ -1,10 +1,10 @@
-# greenhouse-wordpress
+# "Greenhouse": project for WordPress
 
 ## Installation
 
 `npm i`
 `bower i`
 
-## Run
+## Development
 
 Use `gulp` to emulate on Chrome
