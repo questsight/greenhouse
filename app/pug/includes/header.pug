@@ -1,0 +1,19 @@
+header.site__header.header
+  .container-fluid
+    .row
+      .col-xs-10.col-sm-6.col-lg-3
+        .header__col
+          .header__phone.text-center
+            include top-phone.pug
+      .hidden-xs.hidden-sm.hidden-md.col-lg-6#navigation__box
+        .header__col
+          .header__navigation
+            include navigation.pug
+      .hidden-xs.col-sm-5.col-lg-3
+        .header__col
+          .header__email.text-center
+            include top-email.pug
+      .col-xs-2.col-sm-1.hidden-lg#hamburger__box
+        .header__col
+          .header__hamburger.text-right
+            include hamburger.pug

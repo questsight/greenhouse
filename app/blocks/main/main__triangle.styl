@@ -1,0 +1,13 @@
+.main__triangle
+  mainTitleTriangleSize = 150px
+  display none
+  @media only screen and (min-width: lg)
+    border-bottom mainTitleTriangleSize solid themeOverlay
+    border-right mainTitleTriangleSize solid transparent
+    display block
+    height 0
+    left 0-(mainTitleTriangleSize/3)
+    position absolute
+    width 0
+    transform translate(0, -50%)
+    top 50%

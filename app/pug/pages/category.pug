@@ -1,0 +1,95 @@
+extends ../layouts/default.pug
+
+block site-content
+  section.section.category
+    .section__content.category__content
+      .row
+        .col-xs-12.hidden-sm.hidden-md.hidden-lg
+          button.button.button_bg_light.category__button#button-filter Фильтр товаров
+          .category__filter#filter
+            form.sidebar__filter.filter(method='post')
+              .col-xs-8
+                .filter__title Теплицы
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='cat[]', value='belorusochka')
+                  span.filter__label
+                    | Белорусочка
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='cat[]', value='belorusochka')
+                  span.filter__label
+                    | Белорусочка Усиленная
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='cat[]', value='belorusochka')
+                  span.filter__label
+                    | Белорусочка Монолит
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='cat[]', value='belorusochka')
+                  span.filter__label
+                    | Кремлевская Цинк (2,5 м)
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='cat[]', value='belorusochka')
+                  span.filter__label
+                    | Кремлевская Цинк (3 м)
+              .col-xs-4
+                .filter__title Размер
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='size[]', value='3x4')
+                  span.filter__label
+                    | 3 X 4
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='size[]', value='3x6')
+                  span.filter__label
+                    | 3 X 6
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='size[]', value='3x8')
+                  span.filter__label
+                    | 3 X 8
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='size[]', value='3x10')
+                  span.filter__label
+                    | 3 X 10
+                .filter__one
+                  span.filter__input
+                    input(type='checkbox', name='size[]', value='mini')
+                  span.filter__label
+                    | мини
+              .col-xs-12
+                button.button.button_bg_light.category__button Отфильтровать
+        .col-xs-6.col-md-4
+          .category__one
+            .category__img
+              img(src='assets/images/center/center_2.jpg')
+            .category__name Белоруссочка
+            .category__price 10000 руб.
+            a(href="").button.button_bg_additional Подробнее
+        .col-xs-6.col-md-4
+          .category__one
+            .category__img
+              img(src='assets/images/center/center_1.jpg')
+            .category__name Кремлевская
+            .category__price 10000 руб.
+            a(href="").button.button_bg_additional Подробнее
+        .col-xs-6.col-md-4
+          .category__one
+            .category__img
+              img(src='assets/images/center/center_2.jpg')
+            .category__name Белоруссочка
+            .category__price 10000 руб.
+            a(href="").button.button_bg_additional Подробнее
+        .col-xs-6.col-md-4
+          .category__one
+            .category__img
+              img(src='assets/images/center/center_2.jpg')
+            .category__name Белоруссочка
+            .category__price 10000 руб.
+            a(href="").button.button_bg_additional Подробнее
+        

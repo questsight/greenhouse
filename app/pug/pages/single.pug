@@ -1,0 +1,80 @@
+extends ../layouts/default.pug
+
+block site-content
+  section.section.single
+    .section__header.single__header
+      .section__title.page__title
+        | Белорусочка-4
+    .section__content.single__content
+      .row
+        .col-sm-6
+          .single__slider
+            .slider-for
+              img(src='assets/images/center/center_1.jpg')
+              img(src='assets/images/main/main__slider_slide_3.jpg')
+              img(src='assets/images/main/main__slider_slide_2.jpg')
+              img(src='assets/images/main/main__slider_slide_3.jpg')
+            .slider-nav
+              img(src='assets/images/main/main__slider_slide_2.jpg')
+              img(src='assets/images/main/main__slider_slide_3.jpg')
+              img(src='assets/images/main/main__slider_slide_2.jpg')
+              img(src='assets/images/main/main__slider_slide_3.jpg')
+            .single__price 8750 руб.
+        .col-sm-6
+          p
+            b Высота:&#160;
+            | 2 м
+          p 
+            b Ширина:&#160;
+            | 3 м.
+          p 
+            b Длина:&#160;
+            | 4 м.
+          p 
+            b Тип конструкции:&#160;
+            | Арочный
+          p 
+            b Макс. нагрузка:&#160;
+            | 150 кг
+          p 
+            b Тип профиля:&#160;
+            | оцинкованная стальная труба
+          p 
+            b Размер профиля:&#160;
+            | 20х20х1 мм
+          p 
+            b Расстояние между арок:&#160;
+            | 0,65 м
+          p 
+            b Дверии и форточки:&#160;
+            | 2 торцевые двери с форточками
+          p 
+            b Крепление полкарбоната:&#160;
+            | саморез
+          p 
+            b Тип сборки:&#160;
+            | болтовой
+          p 
+            b Тип установки:&#160;
+            | на фундамент или грунт
+          p 
+            b Транспортировка:&#160;
+            | грузовой автомобиль
+          p 
+            b Производитель:&#160;
+            | Республика Беларусь
+        .col-xs-12
+          form.contacts__form.center-block(action='', method='post')
+            .form-group
+              label(for='name') Ваше имя:
+              input#name.form-control(type='name', name='name', placeholder='Name')
+            .form-group
+              label(for='email1') E-mail:
+              input#email1.form-control(type='email', name='email', placeholder='Email')
+            .form-group
+              label(for='phone') Номер телефона:
+              input#phone.form-control(type='phone', name='phone', placeholder='Phone')
+            .form-group
+              label(for='message') Сообщение:
+              textarea.form-control(name='message', rows='3')
+            button.button.button_bg_theme(type='submit') Заказать

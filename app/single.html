@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web project</title>
+    <link rel="stylesheet" href="libs/css/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/common.min.css">
+  </head>
+  <body class="body">
+    <div class="site">
+      <header class="site__header header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-10 col-sm-6 col-lg-3">
+              <div class="header__col">
+                <div class="header__phone text-center">
+                  <div class="top-phone top-phone_view_theme"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (495) 777-77-77</div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-xs hidden-sm hidden-md col-lg-6" id="navigation__box">
+              <div class="header__col">
+                <div class="header__navigation">
+                  <nav class="navigation" id="navigation">
+                    <ul class="navigation__list navigation__hidden" id="navigation__list">
+                      <li><a href="#">Главная</a></li>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Каталог</a></li>
+                      <li><a href="#">Отзывы</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-xs col-sm-5 col-lg-3">
+              <div class="header__col">
+                <div class="header__email text-center">
+                  <div class="top-phone top-phone_view_theme"><i class="fa fa-envelope-o" aria-hidden="true"></i>mail@mail.ru</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-1 hidden-lg" id="hamburger__box">
+              <div class="header__col">
+                <div class="header__hamburger text-right">
+                  <div class="hamburger" id="hamburger">
+                    <div class="hamburger__item"></div>
+                    <div class="hamburger__item"></div>
+                    <div class="hamburger__item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="site__content content">
+        <div class="conteiner">
+          <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+            <aside class="section sidebar">
+              <form class="sidebar__filter filter" method="post">
+                <div class="filter__title">Теплицы</div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="cat[]" value="belorusochka" onchange="this.form.submit()"></span><span class="filter__label">Белорусочка</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="cat[]" value="belorusochka" onchange="this.form.submit()"></span><span class="filter__label">Белорусочка Усиленная</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="cat[]" value="belorusochka" onchange="this.form.submit()"></span><span class="filter__label">Белорусочка Монолит</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="cat[]" value="belorusochka" onchange="this.form.submit()"></span><span class="filter__label">Кремлевская Цинк (2,5 м)</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="cat[]" value="belorusochka" onchange="this.form.submit()"></span><span class="filter__label">Кремлевская Цинк (3 м)</span></div>
+                <div class="filter__title">Размер</div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="size[]" value="3x4" onchange="this.form.submit()"></span><span class="filter__label">3 X 4</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="size[]" value="3x6" onchange="this.form.submit()"></span><span class="filter__label">3 X 6</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="size[]" value="3x8" onchange="this.form.submit()"></span><span class="filter__label">3 X 8</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="size[]" value="3x10" onchange="this.form.submit()"></span><span class="filter__label">3 X 10</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="size[]" value="mini" onchange="this.form.submit()"></span><span class="filter__label">мини</span></div>
+                <div class="filter__title">Форма</div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="form[]" value="arochnaya" onchange="this.form.submit()"></span><span class="filter__label">Арочные</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="form[]" value="kaplya" onchange="this.form.submit()"></span><span class="filter__label">В форме капли</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="form[]" value="dvuhskatnyie" onchange="this.form.submit()"></span><span class="filter__label">Двухскатные</span></div>
+                <div class="filter__title">Назначение</div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="purpose[]" value="otsinkovannyie" onchange="this.form.submit()"></span><span class="filter__label">Оцинкованные</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="purpose[]" value="otsinkovannyie" onchange="this.form.submit()"></span><span class="filter__label">Усиленные</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="purpose[]" value="dlyadachi" onchange="this.form.submit()"></span><span class="filter__label">Для дачи</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="purpose[]" value="dlyasada" onchange="this.form.submit()"></span><span class="filter__label">Для сада</span></div>
+                <div class="filter__title">Производитель</div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="maker[]" value="belarus" onchange="this.form.submit()"></span><span class="filter__label">Республика Беларусь</span></div>
+                <div class="filter__one"><span class="filter__input">
+                    <input type="checkbox" name="maker[]" value="novyieformyi" onchange="this.form.submit()"></span><span class="filter__label">«Новые формы»</span></div>
+              </form>
+            </aside>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-8">
+            <section class="section single">
+              <div class="section__header single__header">
+                <div class="section__title page__title">Белорусочка-4</div>
+              </div>
+              <div class="section__content single__content">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="single__slider">
+                      <div class="slider-for"><img src="assets/images/center/center_1.jpg"><img src="assets/images/main/main__slider_slide_3.jpg"><img src="assets/images/main/main__slider_slide_2.jpg"><img src="assets/images/main/main__slider_slide_3.jpg"></div>
+                      <div class="slider-nav"><img src="assets/images/main/main__slider_slide_2.jpg"><img src="assets/images/main/main__slider_slide_3.jpg"><img src="assets/images/main/main__slider_slide_2.jpg"><img src="assets/images/main/main__slider_slide_3.jpg"></div>
+                      <div class="single__price">8750 руб.</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <p><b>Высота:&#160;</b>2 м</p>
+                    <p> <b>Ширина:&#160;</b>3 м.</p>
+                    <p> <b>Длина:&#160;</b>4 м.</p>
+                    <p> <b>Тип конструкции:&#160;</b>Арочный</p>
+                    <p> <b>Макс. нагрузка:&#160;</b>150 кг</p>
+                    <p> <b>Тип профиля:&#160;</b>оцинкованная стальная труба</p>
+                    <p> <b>Размер профиля:&#160;</b>20х20х1 мм</p>
+                    <p> <b>Расстояние между арок:&#160;</b>0,65 м</p>
+                    <p> <b>Дверии и форточки:&#160;</b>2 торцевые двери с форточками</p>
+                    <p> <b>Крепление полкарбоната:&#160;</b>саморез</p>
+                    <p> <b>Тип сборки:&#160;</b>болтовой</p>
+                    <p> <b>Тип установки:&#160;</b>на фундамент или грунт</p>
+                    <p> <b>Транспортировка:&#160;</b>грузовой автомобиль</p>
+                    <p> <b>Производитель:&#160;</b>Республика Беларусь</p>
+                  </div>
+                  <div class="col-xs-12">
+                    <form class="contacts__form center-block" action="" method="post">
+                      <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input class="form-control" id="name" type="name" name="name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email1">E-mail:</label>
+                        <input class="form-control" id="email1" type="email" name="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Номер телефона:</label>
+                        <input class="form-control" id="phone" type="phone" name="phone" placeholder="Phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea class="form-control" name="message" rows="3"></textarea>
+                      </div>
+                      <button class="button button_bg_theme" type="submit">Заказать</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <form class="modal__form">
+          <div class="modal__text">Напишите нам свой номер, и наш менеджер свяжется с Вами в течение 15 минут</div>
+          <input class="modal__input" type="text" placeholder="Ваш телефон">
+          <div class="modal__button">
+            <button class="button button_bg_accent button_size_large" id="modal__button" type="submit">Отправить</button>
+          </div>
+        </form>
+        <div class="modal__shut shut" id="modal__shut"><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+      <!--#modal.modal
+      form.modal__form
+        table.modal__table
+          tbody
+            tr
+              td.modal__td
+                span
+                  input.modal__input(type='text', placeholder='Ваш телефон')
+              td.modal__td
+                button#modal__button.button.button_bg_accent.button_size_large(type='submit')
+                  | Отправить
+      #modal__shut.modal__shut.shut
+        i.fa.fa-times(aria-hidden='true')
+      -->
+      <footer class="site__footer footer">
+        <div class="wrapper">
+          <div class="footer__line"></div>
+        </div>
+        <div class="wrapper">
+          <div class="corpinfo">© «Теплица-Плюс», 2018</div>
+          <div class="copyright">При использовании материалов ссылка на <a class="copyright__link" href="https://kupit-teplitsu.ru">kupit-teplitsu.ru</a> обязательна</div>
+          <div class="webmikorn"><a href="https://webmikorn.ru/" target="_blank">Разработка сайта Микорн</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/vendor.min.js"></script>
+    <script src="assets/js/common.min.js"></script>
+  </body>
+</html>
