@@ -1,4 +1,4 @@
-# greenhouse
+# greenhouse-wordpress
 
 ## Installation
 
