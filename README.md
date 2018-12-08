@@ -2,8 +2,8 @@
 
 ## Installation
 
-`npm i`
-`bower i`
+1. `npm i`
+2. `bower i`
 
 ## Development
 
